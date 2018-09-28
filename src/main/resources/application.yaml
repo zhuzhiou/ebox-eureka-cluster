@@ -12,5 +12,5 @@ eureka:
     prefer-ip-address: true
 security:
   user:
-    name: eureka
-    password: eureka
+    name: ${HTTP_BASIC_AUTH_USERNAME:ebox}
+    password: ${HTTP_BASIC_AUTH_PASSWORD:ebox}
