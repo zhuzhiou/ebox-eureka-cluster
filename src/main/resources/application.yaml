@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka-cluster
+server:
+  port: 8761
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:eureka@172.16.28.129:8761/eureka/
+    fetch-registry: false
+  instance:
+    prefer-ip-address: true
+security:
+  user:
+    name: eureka
+    password: eureka
